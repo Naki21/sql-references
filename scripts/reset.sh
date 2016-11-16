@@ -1,4 +1,4 @@
-#!/bin/sh
+# !/bin/sh
 
 SQL_SCRIPT_ROOT="$(cd "$(dirname $0)" && pwd)"
 PSQL_CMD="psql --pset=pager=off --set=ON_ERROR_STOP=true"

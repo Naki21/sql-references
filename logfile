@@ -1,0 +1,464 @@
+LOG:  database system was shut down at 2016-11-15 15:15:21 EST
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  syntax error at or near "#!/" at character 1
+STATEMENT:  #!/bin/sh
+	SQL_SCRIPT_ROOT="$(cd "$(dirname $0)" && pwd)"
+	PSQL_CMD="psql --pset=pager=off --set=ON_ERROR_STOP=true"
+	DATABASE="sql-crud"
+	$PSQL_CMD 
+	DROP DATABASE IF EXISTS "$DATABASE";
+ERROR:  syntax error at or near "EOF" at character 1
+STATEMENT:  EOF
+	if [ $? -gt 0 ];
+ERROR:  syntax error at or near "then" at character 1
+STATEMENT:  then
+	  echo Error creating database $DATABASE
+	  exit 1
+	fi
+	for script in ${SQL_SCRIPT_ROOT}/*/*; do
+	  $PSQL_CMD --file=${script} $DATABASE
+	  if [ $? -gt 0 ]; then
+	    echo Error running script: $script
+	    break
+	  fi
+	done
+ERROR:  syntax error at or near "!/" at character 1
+STATEMENT:  !/bin/sh
+	SQL_SCRIPT_ROOT="$(cd "$(dirname $0)" && pwd)"
+	PSQL_CMD="psql --pset=pager=off --set=ON_ERROR_STOP=true"
+	DATABASE="sql-crud"
+	$PSQL_CMD 
+	DROP DATABASE IF EXISTS "$DATABASE";
+ERROR:  database "$DATABASE" already exists
+STATEMENT:  CREATE DATABASE "$DATABASE";
+ERROR:  syntax error at or near "EOF" at character 1
+STATEMENT:  EOF
+	if [ $? -gt 0 ];
+ERROR:  syntax error at or near "then" at character 1
+STATEMENT:  then
+	  echo Error creating database $DATABASE
+	  exit 1
+	fi
+	for script in ${SQL_SCRIPT_ROOT}/*/*; do
+	  $PSQL_CMD --file=${script} $DATABASE
+	  if [ $? -gt 0 ]; then
+	    echo Error running script: $script
+	    break
+	  fi
+	done
+ERROR:  syntax error at or near "!/" at character 1
+STATEMENT:  !/bin/sh
+	SQL_SCRIPT_ROOT="$(cd "$(dirname $0)" && pwd)"
+	PSQL_CMD="psql --pset=pager=off --set=ON_ERROR_STOP=true"
+	DATABASE="sql-crud"
+	$PSQL_CMD 
+	DROP DATABASE IF EXISTS "$DATABASE";
+ERROR:  database "$DATABASE" already exists
+STATEMENT:  CREATE DATABASE "$DATABASE";
+ERROR:  syntax error at or near "EOF" at character 1
+STATEMENT:  EOF
+	if [ $? -gt 0 ];
+ERROR:  syntax error at or near "then" at character 1
+STATEMENT:  then
+	  echo Error creating database $DATABASE
+	  exit 1
+	fi
+	for script in ${SQL_SCRIPT_ROOT}/*/*; do
+	  $PSQL_CMD --file=${script} $DATABASE
+	  if [ $? -gt 0 ]; then
+	    echo Error running script: $script
+	    break
+	  fi
+	done
+ERROR:  syntax error at or near "!/" at character 1
+STATEMENT:  !/bin/sh
+	SQL_SCRIPT_ROOT="$(cd "$(dirname $0)" && pwd)"
+	PSQL_CMD="psql --pset=pager=off --set=ON_ERROR_STOP=true"
+	DATABASE="sql-crud"
+	$PSQL_CMD 
+	DROP DATABASE IF EXISTS "$DATABASE";
+ERROR:  database "$DATABASE" already exists
+STATEMENT:  CREATE DATABASE "$DATABASE";
+ERROR:  syntax error at or near "EOF" at character 1
+STATEMENT:  EOF
+	if [ $? -gt 0 ];
+ERROR:  syntax error at or near "then" at character 1
+STATEMENT:  then
+	  echo Error creating database $DATABASE
+	  exit 1
+	fi
+	for script in ${SQL_SCRIPT_ROOT}/*/*; do
+	  $PSQL_CMD --file=${script} $DATABASE
+	  if [ $? -gt 0 ]; then
+	    echo Error running script: $script
+	    break
+	  fi
+	done
+ERROR:  syntax error at or near "#" at character 1
+STATEMENT:  # !/bin/sh
+	SQL_SCRIPT_ROOT="$(cd "$(dirname $0)" && pwd)"
+	PSQL_CMD="psql --pset=pager=off --set=ON_ERROR_STOP=true"
+	DATABASE="sql-crud"
+	$PSQL_CMD 
+	DROP DATABASE IF EXISTS "$DATABASE";
+ERROR:  database "$DATABASE" already exists
+STATEMENT:  CREATE DATABASE "$DATABASE";
+ERROR:  syntax error at or near "EOF" at character 1
+STATEMENT:  EOF
+	if [ $? -gt 0 ];
+ERROR:  syntax error at or near "then" at character 1
+STATEMENT:  then
+	  echo Error creating database $DATABASE
+	  exit 1
+	fi
+	for script in ${SQL_SCRIPT_ROOT}/*/*; do
+	  $PSQL_CMD --file=${script} $DATABASE
+	  if [ $? -gt 0 ]; then
+	    echo Error running script: $script
+	    break
+	  fi
+	done
+ERROR:  syntax error at or near "!/" at character 1
+STATEMENT:  !/bin/sh
+	SQL_SCRIPT_ROOT="$(cd "$(dirname $0)" && pwd)"
+	PSQL_CMD="psql --pset=pager=off --set=ON_ERROR_STOP=true"
+	DATABASE="sql-crud"
+	$PSQL_CMD 
+	DROP DATABASE IF EXISTS "$DATABASE";
+ERROR:  database "$DATABASE" already exists
+STATEMENT:  CREATE DATABASE "$DATABASE";
+ERROR:  syntax error at or near "EOF" at character 1
+STATEMENT:  EOF
+	if [ $? -gt 0 ];
+ERROR:  syntax error at or near "then" at character 1
+STATEMENT:  then
+	  echo Error creating database $DATABASE
+	  exit 1
+	fi
+	for script in ${SQL_SCRIPT_ROOT}/*/*; do
+	  $PSQL_CMD --file=${script} $DATABASE
+	  if [ $? -gt 0 ]; then
+	    echo Error running script: $script
+	    break
+	  fi
+	done
+ERROR:  syntax error at or near "/" at character 1
+STATEMENT:  /sh
+	SQL_SCRIPT_ROOT="$(cd "$(dirname $0)" && pwd)"
+	PSQL_CMD="psql --pset=pager=off --set=ON_ERROR_STOP=true"
+	DATABASE="sql-crud"
+	$PSQL_CMD 
+	DROP DATABASE IF EXISTS "$DATABASE";
+ERROR:  database "$DATABASE" already exists
+STATEMENT:  CREATE DATABASE "$DATABASE";
+ERROR:  syntax error at or near "EOF" at character 1
+STATEMENT:  EOF
+	if [ $? -gt 0 ];
+ERROR:  syntax error at or near "then" at character 1
+STATEMENT:  then
+	  echo Error creating database $DATABASE
+	  exit 1
+	fi
+	for script in ${SQL_SCRIPT_ROOT}/*/*; do
+	  $PSQL_CMD --file=${script} $DATABASE
+	  if [ $? -gt 0 ]; then
+	    echo Error running script: $script
+	    break
+	  fi
+	done
+ERROR:  syntax error at or near "SQL_SCRIPT_ROOT" at character 1
+STATEMENT:  SQL_SCRIPT_ROOT="$(cd "$(dirname $0)" && pwd)"
+	PSQL_CMD="psql --pset=pager=off --set=ON_ERROR_STOP=true"
+	DATABASE="sql-crud"
+	$PSQL_CMD 
+	DROP DATABASE IF EXISTS "$DATABASE";
+ERROR:  database "$DATABASE" already exists
+STATEMENT:  CREATE DATABASE "$DATABASE";
+ERROR:  syntax error at or near "EOF" at character 1
+STATEMENT:  EOF
+	if [ $? -gt 0 ];
+ERROR:  syntax error at or near "then" at character 1
+STATEMENT:  then
+	  echo Error creating database $DATABASE
+	  exit 1
+	fi
+	for script in ${SQL_SCRIPT_ROOT}/*/*; do
+	  $PSQL_CMD --file=${script} $DATABASE
+	  if [ $? -gt 0 ]; then
+	    echo Error running script: $script
+	    break
+	  fi
+	done
+ERROR:  column "doctors" does not exist at character 8
+STATEMENT:  SELECT doctors
+	;
+ERROR:  syntax error at or near ";" at character 18
+STATEMENT:  SELECT doctors *
+	;
+ERROR:  syntax error at or near "doctors" at character 10
+STATEMENT:  SELECT * doctors;
+ERROR:  syntax error at or near "lkjlkj" at character 1
+STATEMENT:  lkjlkj
+	;
+ERROR:  relation "doctor" does not exist
+STATEMENT:  ALTER TABLE patients
+	  ADD COLUMN doctor_id INTEGER
+	  REFERENCES doctor(id);
+ERROR:  column "doctor_id" does not exist
+STATEMENT:  CREATE INDEX ON patients(doctor_id);
+ERROR:  column ids.doctor_ids does not exist at character 33
+HINT:  Perhaps you meant to reference the column "ids.doctor_id".
+STATEMENT:  UPDATE patients
+	SET doctor_id = ids.doctor_ids
+	FROM (SELECT TRUNC(RANDOM() * (SELECT COUNT(*) FROM doctors) + 1) doctor_id,
+	GENERATE_SERIES(1, (SELECT COUNT(*) FROM patients)) patient_id) ids
+	WHERE patients.id = ids.patient_id;
+ERROR:  syntax error at or near "WHERE" at character 194
+STATEMENT:  UPDATE patients
+	SET doctor_id = ids.doctor_ids
+	FROM (SELECT TRUNC(RANDOM() * (SELECT COUNT(*) FROM doctors) + 1) doctor_id,
+	GENERATE_SERIES(1, (SELECT COUNT(*) FROM patients)) patient_id) ids,
+	WHERE patients.id = ids.patient_id;
+ERROR:  syntax error at or near "WHERE" at character 194
+STATEMENT:  UPDATE patients
+	SET doctor_id = ids.doctor_ids
+	FROM (SELECT TRUNC(RANDOM() * (SELECT COUNT(*) FROM doctors) + 1) doctor_id,
+	GENERATE_SERIES(1, (SELECT COUNT(*) FROM patients)) patient_id) ids,
+	WHERE patient.id = ids.patient_id;
+ERROR:  missing FROM-clause entry for table "patient" at character 199
+STATEMENT:  UPDATE patients
+	SET doctor_id = ids.doctor_ids
+	FROM (SELECT TRUNC(RANDOM() * (SELECT COUNT(*) FROM doctors) + 1) doctor_id,
+	GENERATE_SERIES(1, (SELECT COUNT(*) FROM patients)) patient_id) ids
+	WHERE patient.id = ids.patient_id;
+ERROR:  column ids.doctor_ids does not exist at character 33
+HINT:  Perhaps you meant to reference the column "ids.doctor_id".
+STATEMENT:  UPDATE patients
+	SET doctor_id = ids.doctor_ids
+	FROM (SELECT TRUNC(RANDOM() * (SELECT COUNT(*) FROM doctors) + 1) doctor_id,
+	GENERATE_SERIES(1, (SELECT COUNT(*) FROM patients)) patient_id) ids
+	WHERE patients.id = ids.patient_id;
+ERROR:  column "recipe_id" of relation "ingredients" already exists
+STATEMENT:  ALTER TABLE ingredients
+	  ADD COLUMN recipe_id INTEGER
+	  REFERENCES recipes(id);
+ERROR:  syntax error at or near "#" at character 1
+STATEMENT:  # !/bin/sh
+	SQL_SCRIPT_ROOT="$(cd "$(dirname $0)" && pwd)"
+	PSQL_CMD="psql --pset=pager=off --set=ON_ERROR_STOP=true"
+	DATABASE="sql-crud"
+	$PSQL_CMD 
+	DROP DATABASE IF EXISTS "$DATABASE";
+ERROR:  database "$DATABASE" already exists
+STATEMENT:  CREATE DATABASE "$DATABASE";
+ERROR:  syntax error at or near "EOF" at character 1
+STATEMENT:  EOF
+	if [ $? -gt 0 ];
+ERROR:  syntax error at or near "then" at character 1
+STATEMENT:  then
+	  echo Error creating database $DATABASE
+	  exit 1
+	fi
+	for script in ${SQL_SCRIPT_ROOT}/*/*; do
+	  $PSQL_CMD --file=${script} $DATABASE
+	  if [ $? -gt 0 ]; then
+	    echo Error running script: $script
+	    break
+	  fi
+	done
+ERROR:  syntax error at or near "!/" at character 1
+STATEMENT:  !/bin/sh
+	SQL_SCRIPT_ROOT="$(cd "$(dirname $0)" && pwd)"
+	PSQL_CMD="psql --pset=pager=off --set=ON_ERROR_STOP=true"
+	DATABASE="sql-crud"
+	$PSQL_CMD 
+	DROP DATABASE IF EXISTS "$DATABASE";
+ERROR:  database "$DATABASE" already exists
+STATEMENT:  CREATE DATABASE "$DATABASE";
+ERROR:  syntax error at or near "EOF" at character 1
+STATEMENT:  EOF
+	if [ $? -gt 0 ];
+ERROR:  syntax error at or near "then" at character 1
+STATEMENT:  then
+	  echo Error creating database $DATABASE
+	  exit 1
+	fi
+	for script in ${SQL_SCRIPT_ROOT}/*/*; do
+	  $PSQL_CMD --file=${script} $DATABASE
+	  if [ $? -gt 0 ]; then
+	    echo Error running script: $script
+	    break
+	  fi
+	done
+ERROR:  syntax error at or near "/" at character 1
+STATEMENT:  /bin/sh
+	SQL_SCRIPT_ROOT="$(cd "$(dirname $0)" && pwd)"
+	PSQL_CMD="psql --pset=pager=off --set=ON_ERROR_STOP=true"
+	DATABASE="sql-crud"
+	$PSQL_CMD 
+	DROP DATABASE IF EXISTS "$DATABASE";
+ERROR:  database "$DATABASE" already exists
+STATEMENT:  CREATE DATABASE "$DATABASE";
+ERROR:  syntax error at or near "EOF" at character 1
+STATEMENT:  EOF
+	if [ $? -gt 0 ];
+ERROR:  syntax error at or near "then" at character 1
+STATEMENT:  then
+	  echo Error creating database $DATABASE
+	  exit 1
+	fi
+	for script in ${SQL_SCRIPT_ROOT}/*/*; do
+	  $PSQL_CMD --file=${script} $DATABASE
+	  if [ $? -gt 0 ]; then
+	    echo Error running script: $script
+	    break
+	  fi
+	done
+ERROR:  syntax error at or near "!" at character 1
+STATEMENT:  !sh
+	SQL_SCRIPT_ROOT="$(cd "$(dirname $0)" && pwd)"
+	PSQL_CMD="psql --pset=pager=off --set=ON_ERROR_STOP=true"
+	DATABASE="sql-crud"
+	$PSQL_CMD 
+	DROP DATABASE IF EXISTS "$DATABASE";
+ERROR:  database "$DATABASE" already exists
+STATEMENT:  CREATE DATABASE "$DATABASE";
+ERROR:  syntax error at or near "EOF" at character 1
+STATEMENT:  EOF
+	if [ $? -gt 0 ];
+ERROR:  syntax error at or near "then" at character 1
+STATEMENT:  then
+	  echo Error creating database $DATABASE
+	  exit 1
+	fi
+	for script in ${SQL_SCRIPT_ROOT}/*/*; do
+	  $PSQL_CMD --file=${script} $DATABASE
+	  if [ $? -gt 0 ]; then
+	    echo Error running script: $script
+	    break
+	  fi
+	done
+ERROR:  column "recipe_id" of relation "ingredients" already exists
+STATEMENT:  ALTER TABLE ingredients
+	  ADD COLUMN recipe_id INTEGER
+	  REFERENCES recipes(id);
+ERROR:  column "recipe_id" of relation "ingredients" already exists
+STATEMENT:  ALTER TABLE ingredients
+	  ADD COLUMN recipe_id INTEGER
+	  REFERENCES recipes(id);
+ERROR:  syntax error at or near "TABLE" at character 47
+STATEMENT:  ALTER TABLE ingredients DROP CONSTRAINT
+	ALTER TABLE ingredients DROP CONSTRAINT ingredients_recipe_id_fkey;
+ERROR:  syntax error at or near "TABLE" at character 47
+STATEMENT:  ALTER TABLE ingredients DROP CONSTRAINT
+	ALTER TABLE ingredients DROP CONSTRAINT ingredients_recipe_id_fkey;
+ERROR:  syntax error at or near "TABLE" at character 47
+STATEMENT:  ALTER TABLE ingredients DROP CONSTRAINT
+	ALTER TABLE ingredients DROP CONSTRAINT ingredients_recipe_id_fkey;
+ERROR:  column "recipe_id" of relation "ingredients" already exists
+STATEMENT:  ALTER TABLE ingredients
+	  ADD COLUMN recipe_id INTEGER
+	  REFERENCES recipes(id);
+ERROR:  missing FROM-clause entry for table "recipes" at character 207
+STATEMENT:  UPDATE ingredients
+	SET recipe_id = ids.doctor_id
+	FROM (SELECT TRUNC(RANDOM() * (SELECT COUNT(*) FROM recipes) + 1) recipe_id,
+	GENERATE_SERIES(1, (SELECT COUNT(*) FROM ingredients)) ingredient_id) ids
+	WHERE recipes.id = ids.recipe_id;
+ERROR:  missing FROM-clause entry for table "recipe" at character 207
+STATEMENT:  UPDATE ingredients
+	SET recipe_id = ids.doctor_id
+	FROM (SELECT TRUNC(RANDOM() * (SELECT COUNT(*) FROM recipes) + 1) recipe_id,
+	GENERATE_SERIES(1, (SELECT COUNT(*) FROM ingredients)) ingredient_id) ids
+	WHERE recipe.id = ids.recipe_id;
+ERROR:  missing FROM-clause entry for table "recipe" at character 207
+STATEMENT:  UPDATE ingredients
+	SET recipe_id = ids.doctor_id
+	FROM (SELECT TRUNC(RANDOM() * (SELECT COUNT(*) FROM recipes) + 1) recipe_id,
+	GENERATE_SERIES(1, (SELECT COUNT(*) FROM ingredients)) ingredient_id) ids
+	WHERE recipe.id = ids.recipe_ids;
+ERROR:  column "patient_id" does not exist at character 8
+STATEMENT:  SELECT patient_id FROM doctors
+	;
+ERROR:  column "patient" does not exist at character 8
+STATEMENT:  SELECT patient FROM doctors
+	;
+ERROR:  column "patients" does not exist at character 8
+STATEMENT:  SELECT patients FROM doctors
+	;
+ERROR:  column "patient" does not exist at character 8
+STATEMENT:  SELECT patient FROM doctors
+	;
+ERROR:  column "doctors" does not exist at character 8
+STATEMENT:  SELECT doctors
+	;
+ERROR:  column "patient" does not exist at character 8
+STATEMENT:  SELECT patient FROM doctors
+	;
+ERROR:  column "patients" does not exist at character 8
+STATEMENT:  SELECT patients FROM doctors
+	;
+ERROR:  relation "doctor" does not exist at character 58
+STATEMENT:  SELECT d.family_name doctor, p.family_name patients
+	FROM doctor d
+	INNER JOIN patients p
+	  ON d.id = p.doctor_id
+	WHERE specialty IN ('Gastroenterology', 'Sports medicine');
+ERROR:  missing FROM-clause entry for table "recipe" at character 207
+STATEMENT:  UPDATE ingredients
+	SET recipe_id = ids.doctor_id
+	FROM (SELECT TRUNC(RANDOM() * (SELECT COUNT(*) FROM recipes) + 1) recipe_id,
+	GENERATE_SERIES(1, (SELECT COUNT(*) FROM ingredients)) ingredient_id) ids
+	WHERE recipe.id = ids.recipe_id;
+ERROR:  relation "doctor" does not exist at character 58
+STATEMENT:  SELECT d.family_name doctor, p.family_name patients
+	FROM doctor d
+	INNER JOIN patients p
+	  ON d.id = p.doctor_id
+	WHERE specialty IN ('Gastroenterology', 'Sports medicine');
+ERROR:  column ids.doctor_id does not exist at character 36
+STATEMENT:  UPDATE ingredients
+	SET recipe_id = ids.doctor_id
+	FROM (SELECT TRUNC(RANDOM() * (SELECT COUNT(*) FROM recipes) + 1) recipe_id,
+	GENERATE_SERIES(1, (SELECT COUNT(*) FROM ingredients)) ingredient_id) ids
+	WHERE ingredients.id = ids.recipe_id;
+ERROR:  column ids.doctor_id does not exist at character 36
+STATEMENT:  UPDATE ingredients
+	SET recipe_id = ids.doctor_id
+	FROM (SELECT TRUNC(RANDOM() * (SELECT COUNT(*) FROM recipes) + 1) recipe_id,
+	GENERATE_SERIES(1, (SELECT COUNT(*) FROM ingredients)) ingredient_id) ids
+	WHERE ingredients.id = ids.recipe_id;
+ERROR:  column p.recipe_id does not exist at character 108
+HINT:  Perhaps you meant to reference the column "d.recipe_id".
+STATEMENT:  SELECT d.name recipie, p.name ingredients, description
+	FROM ingredients d
+	INNER JOIN recipes p
+	  ON d.id = p.recipe_id
+	WHERE name IN ('canola oil');
+ERROR:  relation "recipe" does not exist at character 86
+STATEMENT:  SELECT d.name recipie, p.name ingredients, description
+	FROM ingredients d
+	INNER JOIN recipe p
+	  ON d.id = p.recipe_id
+	WHERE name IN ('canola oil');
+ERROR:  relation "recipe" does not exist at character 86
+STATEMENT:  SELECT d.name recipie, p.name ingredients, description
+	FROM ingredients d
+	INNER JOIN recipe p
+	  ON d.id = p.recipe_id
+	WHERE name IN ('canola oil');
+ERROR:  column p.recipe_id does not exist at character 108
+HINT:  Perhaps you meant to reference the column "d.recipe_id".
+STATEMENT:  SELECT d.name recipie, p.name ingredients, description
+	FROM ingredients d
+	INNER JOIN recipes p
+	  ON d.id = p.recipe_id
+	WHERE name IN ('canola oil');
+ERROR:  column reference "name" is ambiguous at character 126
+STATEMENT:  SELECT d.name recipie, p.name ingredients, description
+	FROM ingredients d
+	INNER JOIN recipes p
+	  ON p.id = d.recipe_id
+	WHERE name IN ('canola oil');
